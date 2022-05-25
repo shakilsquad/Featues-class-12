@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.full-website {
+    max-width: 1255px;
+    margin: 0 auto;
+}
+.header-section {
+    background: black;
+    text-align: center;
+}
+.header-section ul{
+    list-style: none;
+}
+.header-section ul li {
+    display: inline-block;
+    padding: 20px 0;
+}
+.header-section ul li a {
+    display: inline-block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 20px;
+}
+
+/* Droup Down CSS */
+.header-section ul li{
+    position: relative;
+    
+}
+.header-section ul li ul {
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background: #000;
+    transition: .3s;
+    transform-origin: center;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header-section ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+.header-section ul li ul li{
+    display: block;
+    padding: 0;
+}
+.header-section ul li ul li a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #232323de;
+    transition: .3s;
+}
+.header-section ul li ul li a:hover{
+    background: #3d71d7;
+    padding-right: 10px;
+}
+.header-section ul li ul li:first-child > a{
+    border-top: 5px solid #3d71d7;
+}
+
+/* Sub Droupdown Item CSS */
+.header-section ul li ul li{
+    position: relative;
+}
+.header-section ul li ul li ul {
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: black;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header-section ul li ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.header-section ul li ul li ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #272727cc;
+}
+.header-section ul li ul li ul li a:hover{
+    background: #3d71d7;
+}
+.header-section ul li ul li ul li:first-child a{
+    border-top: 5px solid #3d71d7;
+}
+/* image section  */
+.slider {
+    text-align: center;
+    background-image: url(https://i.ibb.co/dKwW4z2/young-mens.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    padding: 206px 0px;
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+.slider h1 {
+    display: inline-block;
+    background-color: white;
+    padding: 5px 25px;
+    font-size: 40px;
+}
+.slider h4 {
+    width: 93%;
+/*     margin: auto; */
+    background-color: #fff;
+    padding: 5px 0px;
+    margin: 20px;
+    font-size: 25px;
+}
+button {
+    margin-top: 30px;
+    background-color: red;
+    padding: 5px 15px;
+    color: white;
+    transition: .5s;
+    font-size: 25px;
+}
+button:hover{
+    background-color: white;
+    border: 2px solid red;
+    color: black;
+}
+/* list-style-outside  */
+.list-out ul li{
+    list-style-position: outside;
+}
+.list-out{
+    border: 1px solid #ddd;
+    border-left: none;
+    border-bottom: none;
+}
+/* list-style-inside  */
+.list-in ul li{
+    list-style-position: inside;
+}
+.list-in {
+	box-shadow: 0px 0px 8px rgb(240, 239, 239);
+	margin-top: 50px;
+}
+/* commend section  */
+.formm{
+    background: #f2f2f2;
+    margin-top: 30px;
+}
+.mail {
+	text-align: left;
+	padding: 10px 0;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid red;
+	width: 60%;
+}
+.sub {
+	font-weight: bold;
+	border: 2px solid red;
+	color: #fff;
+	background-color: red;
+	padding: 10px 30px;
+	margin-left: -5px;
+}
+.sub:hover{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    border: 2px solid red;
+}
+/* list-style-type */
+.list1 {
+	background: rgb(255, 255, 255);
+	border: 5px dotted #ddd;
+	padding: 30px 0;
+	margin-top: 40px;
+}
+.list0 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0px;
+    
+}
+.list1 h1{
+    text-align: center;
+}
+.list2{
+    display: inline-block;
+    
+}
+.list2 ul li{
+    list-style: upper-roman inside;
+    padding: 4px 0;
+}
+.list3{
+    display: inline-block;
+}
+.list3 ul li{
+    list-style: square inside;
+    padding: 4px 0;
+}
+.list4{
+    display: inline-block;
+}
+.list4 ul li{
+    list-style-type: lower-greek;
+    padding: 4px 0;
+}
+.list2, .list3, .list4 {
+    margin: 30px  24px;
+}
+/* social menu  */
+.socialMenu{
+    background-color: black;
+}
+.socialMenu h6{
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+}
+.socialMenu ul{
+    text-align: center;
+}
+.socialMenu ul li{
+    display: inline-block;
+}
+.socialMenu ul li a{
+    display: inline-block;
+    color: rgb(14, 2, 2);
+    background: #3498db;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px ;
+    transition: .5s;
+}
+.socialMenu ul li a:hover{
+    background:#d1e3f0;
+}
